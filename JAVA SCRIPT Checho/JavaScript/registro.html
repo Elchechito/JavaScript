@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+    <main>
+        <form class="caja" id="frmvalidacion" novalidate>
+            <h1>Formulario de registro</h1>
+            <labe>Tipo documento</labe>
+            <select id="tipodoc">
+                <option value="0">Seleccione un tipo de documento</option>
+                <option value="1">Cedula de Ciudadania</option>
+                <option value="2">Tarjeta de Indentidad</option>
+                <option value="3">Pasaporte</option>
+            </select>
+
+            <div id="camponmDoc">
+                <label>No. Documento</label>
+                <input type="number" name="noDoc" id="noDoc" class="">
+                <div class="feedback"></div>
+            </div>
+            
+            <div id="campoNombre">
+                <label>Nombre</label>
+                <input type="text" name="nombre" id="nombre" class="">
+                <div class="feedback"></div>
+            </div>
+
+            <div id="campoApellido">
+                <label>Apellido</label>
+                <input type="text" name="apellido" id="apellido" class="">
+                <div class="feedback"></div>
+            </div>
+
+            <div id="campoCelular">
+                <label>Celular</label>
+                <input type="number" name="celular" id="celular" class="">
+                <div class="feedback"></div>
+            </div>
+
+            <div id="campoCorreo">
+                <label>Email</label>
+                <input type="text" name="email" id="email" class="">
+                <div class="feedback"></div>
+            </div>
+    
+            <input type="submit" name="enviar" value="Enviar" class="boton">
+         
+        </form>
+        <script src="js/validacion.js"></script>
+
+    </main>
+</body>
+</html>
